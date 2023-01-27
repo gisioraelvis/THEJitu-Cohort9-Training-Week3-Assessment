@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin: 10px;
+}
+
+.income,
+.expense-tracker,
+.expense {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.income h2,
+.expense-tracker h2,
+.expense h2 {
+  font-size: 1.5rem;
+  color: #000;
+  text-align: center;
+}
+
+.income-amount,
+.expense-amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.income-amount p,
+.expense-amount p {
+  font-size: 2rem;
+  color: #000;
+  margin: 0 10px;
+}
+
+.income-source,
+.expense-type {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.income-source h3,
+.expense-type h3 {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.income-source select,
+.expense-type select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.expense-tracker .balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.expense-tracker .balance p {
+  font-size: 2rem;
+  color: #000;
+  margin: 0 10px;
+}
+
+.expense-tracker .records {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.expense-tracker .records h3 {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.expense-tracker .records .income-record,
+.expense-tracker .records .expense-record {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.expense-tracker .records .income-record p,
+.expense-tracker .records .expense-record p {
+  font-size: 1.5rem;
+  color: #000;
+  margin: 0 10px;
+}
+
+.income-date,
+.expense-date {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.income-date h3,
+.expense-date h3 {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.income-date input,
+.expense-date input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.income-amount-input,
+.expense-amount-input {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.income-amount-input h3,
+.expense-amount-input h3 {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.income-amount-input input,
+.expense-amount-input input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.income-submit,
+.expense-submit {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: all 0.3s ease;
+}
+
+.income-submit:hover,
+.expense-submit:hover {
+  background-color: #ccc;
+}
+
+.income-submit:active,
+.expense-submit:active {
+  background-color: #999;
+}
+
+.income-submit:focus,
+.expense-submit:focus {
+  outline: none;
+}
