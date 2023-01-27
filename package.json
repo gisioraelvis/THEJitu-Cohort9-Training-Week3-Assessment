@@ -1,0 +1,14 @@
+{
+  "name": "asessment-three",
+  "version": "1.0.0",
+  "description": "ThEJitu Cohort 9 Training Week 3 Assessment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
+}
